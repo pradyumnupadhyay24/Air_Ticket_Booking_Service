@@ -1,5 +1,4 @@
-const {ststusCodes} = require('http-status-codes');
-
+const { StatusCodes } = require('http-status-codes')
 class ValidationError extends Error {
 
     constructor(error){
@@ -14,4 +13,5 @@ class ValidationError extends Error {
         this.statusCode = StatusCodes.BAD_REQUEST
     }
 }
-moduke.exports = ValidationError
+
+module.exports = ValidationError;

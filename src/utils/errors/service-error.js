@@ -8,12 +8,12 @@ class ServiceError extends Error {
     ){
         super()
         this.name = 'ServiceError';
-        this.mesaage = messages;
-        this.explainantion = explainantion;
-        this.statusCode = statusCode
+        this.message = message;
+        this.explanation = explanation;
+        this.statusCode = statusCode;
     }
+}
 
- }
+ module.exports = ServiceError; module.exports = ServiceError;
 
- module.exports = ServiceError;
-
+module.exports = ServiceError;
